@@ -2,7 +2,7 @@
     height: 150px;
     width: 150px;
     margin: 30px;
-    background: white;
+    background: #cdfcff;
     box-shadow: 0 0 15px 5px #b9f6ff;
     cursor: pointer;
 }
@@ -73,3 +73,8 @@ button:hover {
     font-size: 32px;
 }
 
+.footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
