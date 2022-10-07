@@ -153,10 +153,19 @@
     color: #1c3e7d;
 }
 
+.criteria h4 {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #1c3e7d;
+    text-indent: 50px;
+    text-decoration: underline;
+}
+
 .criteria_list {
     text-align: center;
     display: flex;
-    padding: 30px;
     margin: 30px;
     list-style: none;
 }
@@ -183,9 +192,17 @@
     text-decoration: underline #00b2e1;
 }
 
+.card h5 {
+    width: 120px;
+    margin: 0 auto 20px;
+}
+
+#cheerfulness {
+    margin: 0 23px;
+}
+
 .description {
     display: block;
-    text-align: center;
 }
 
 .description h3 {
@@ -201,13 +218,14 @@
 
 .description p {
     background-color: #ebf4fb;
-    margin: 50px;
-    text-align: center;
+    margin: 30px 50px;
+    /*text-align: center;*/
     color: #1c3e7d;
     font-family: sans-serif;
     font-size: 18px;
     line-height: 26px;
     border-radius: 10px;
+    text-indent: 40px;
 }
 
 
@@ -219,7 +237,7 @@
 }
 
 .p1 p{
-    padding-top: 15px;
+    padding: 20px 25px;
 }
 
 .p2 {
@@ -230,7 +248,8 @@
 }
 
 .p2 p {
-    padding: 70px;
+    padding: 60px 25px;
+    margin: 80px 50px;
 }
 
 .p3 {
@@ -241,5 +260,18 @@
 }
 
 .p3 p {
-    padding: 32px;
+    padding: 30px 25px;
+    margin: 50px 50px;
+}
+
+#join {
+    border: 2px dashed #0070af;
+    color: #0070af;
+    font-size: 24px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+#join:hover {
+    background-color: rgba(223, 238, 246, 40%);
 }
