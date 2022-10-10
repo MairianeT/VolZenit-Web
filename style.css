@@ -8,7 +8,7 @@
 
 .header {
     color: #00b2e1;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@
 }
 
 .nav li, a {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #00b2e1;
@@ -52,27 +52,27 @@
 
 .phone {
     color: #1c3e7d;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 900;
     margin-left: 30px;
 }
 .phone a {
     color: #1c3e7d;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 900;
 }
 .mail {
     color: #1c3e7d;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 900;
     margin-left: 30px;
 }
 .mail a {
     color: #1c3e7d;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 900;
 }
@@ -99,14 +99,15 @@
 }
 
 .main_block h2 {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
     line-height: 70px;
     font-size: 62px;
     color: #fcfffd;
 }
 
 .main_block q {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #fcfffd;
 }
@@ -130,7 +131,6 @@
     cursor: pointer;
     user-select: none;
     appearance: none;
-    touch-action: manipulation;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -149,7 +149,7 @@
 
 .criteria h3 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     color: #1c3e7d;
 }
@@ -157,7 +157,7 @@
 .criteria h4 {
     display: block;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #1c3e7d;
     text-indent: 50px;
@@ -173,7 +173,7 @@
 
 .criteria_list li{
     display: grid;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #00b2e1;
 }
@@ -208,7 +208,7 @@
 
 .description h3 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     color: #1c3e7d;
 }
@@ -222,7 +222,7 @@
     margin: 30px 50px;
     /*text-align: center;*/
     color: #1c3e7d;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 26px;
     border-radius: 10px;
@@ -238,7 +238,7 @@
 }
 
 .p1 p{
-    padding: 20px 25px;
+    padding: 10px 20px;
 }
 
 .p2 {
@@ -249,7 +249,7 @@
 }
 
 .p2 p {
-    padding: 60px 25px;
+    padding: 50px 25px;
     margin: 80px 50px;
 }
 
@@ -261,7 +261,7 @@
 }
 
 .p3 p {
-    padding: 30px 25px;
+    padding: 20px 25px;
     margin: 50px 50px;
 }
 
