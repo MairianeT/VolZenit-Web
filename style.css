@@ -1,7 +1,6 @@
 .logo {
-    height: 75px;
-    width: 193px;
-    margin: 30px;
+    height: auto;
+    width: 22%;
     background: #fcfffd;
     cursor: pointer;
 }
@@ -15,28 +14,29 @@
     align-items: center;
     box-sizing: border-box;
     background: #fcfffd;
-    height: 80px;
-    margin: 0;
-    padding: 0;
+    height: auto;
     width:100%;
+    word-wrap: normal;
 }
-
-
+.nav {
+    width: 55%;
+}
+.dropbtn {
+    display: none;
+}
 .nav_links {
+    width: auto;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 0 15px;
-    align-content: space-between;
+    flex-basis: auto;
+    flex-grow: 1;
 }
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
-    text-align: justify;
 }
 .nav_links li a:hover {
     color: #00b2e1ba;
@@ -55,7 +55,6 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 900;
-    margin-left: 30px;
 }
 .phone a {
     color: #1c3e7d;
@@ -68,7 +67,6 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 900;
-    margin-left: 30px;
 }
 .mail a {
     color: #1c3e7d;
@@ -79,6 +77,12 @@
 
 .contacts {
     vertical-align: center;
+    white-space: nowrap;
+    margin: 0 3% 0 0;
+}
+
+.contacts_down {
+    display: none;
 }
 .footer img{
     display: block;
@@ -88,7 +92,7 @@
 }
 
 
-.main_block {
+    .main_block {
     block-size: 200px;
     background-image: url("img/background_blue.jpg");
     background-size: 100%;
@@ -186,7 +190,6 @@
 }
 .card img {
     height: 150px;
-    filter: drop-shadow(0 0 0.35rem #1c3e7d);
 }
 .card strong {
     font-size: 24px;
@@ -220,7 +223,6 @@
 .description p {
     background-color: #ebf4fb;
     margin: 30px 50px;
-    /*text-align: center;*/
     color: #1c3e7d;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -275,4 +277,82 @@
 
 #join:hover {
     background-color: rgba(223, 238, 246, 40%);
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 30%;
+    }
+    .dropbtn {
+        display: flex;
+        margin: 0 auto;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #00b2e1;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #dfeef6;
+        border-radius: 10px;
+    }
+    .nav {
+        position: relative;
+        display: inline-block;
+    }
+    .nav_links {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        background-color: white;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .nav_links a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .show {display: block}
+}
+
+@media screen and (max-width: 580px) {
+
+    .logo {
+        display: none;
+    }
+    .header {
+        position: absolute;
+        background-color: initial;
+        font-size: 4vm;
+    }
+    .contacts {
+        display: none;
+    }
+    .contacts_down {
+        display: block;
+    }
+    .mail, .phone{
+        display: flex;
+        justify-content: center;
+    }
+    .dropbtn {
+        justify-content: center;
+        background-color: initial;
+        color: #dfeef6;
+        margin: 10px;
+    }
+    .dropbtn:hover {
+        background-color: rgba(255, 255, 255, 20%);
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .header {
+        font-size: calc(14px + (32 - 14) * ( (100vw - 480px) / ( 1024 - 480) ));
+    }
 }
