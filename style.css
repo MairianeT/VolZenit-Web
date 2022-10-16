@@ -355,6 +355,10 @@
         width: 45%;
         position: relative;
         display: inline-block;
+        font-size: 32px;
+    }
+    .card footer {
+        height: 150px;
     }
 }
 
