@@ -19,6 +19,7 @@
     word-wrap: normal;
 }
 .nav {
+    height: auto;
     width: 55%;
 }
 .dropbtn {
@@ -50,22 +51,11 @@
     text-decoration: none;
 }
 
-.phone {
-    color: #1c3e7d;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-}
+
 .phone a {
     color: #1c3e7d;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight: 900;
-}
-.mail {
-    color: #1c3e7d;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
     font-weight: 900;
 }
 .mail a {
@@ -91,22 +81,20 @@
     margin-bottom: 20px;
 }
 
-
     .main_block {
-    block-size: 200px;
-    background-image: url("img/background_blue.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 130px 20px 350px;
-    text-align: center;
-    line-height: 50px;
-}
+        background-image: url("img/background_blue.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        line-height: 1em;
+        padding: 3em 0;
+    }
 
 .main_block h2 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 5px;
-    line-height: 70px;
-    font-size: 62px;
+    line-height: 1.2em;
+    font-size: 58px;
     color: #fcfffd;
 }
 
@@ -282,7 +270,7 @@
     display: none;
 }
 
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px){
     .logo {
         width: 30%;
     }
@@ -292,7 +280,7 @@
         background-color: white;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 40px;
         color: #00b2e1;
         border: none;
         cursor: pointer;
@@ -321,20 +309,48 @@
         display: block;
     }
     .show {display: block}
+
+    .main_block {
+        background-image: none;
+    }
+    body {
+        background-image: url("img/back_1000.jpg");
+        background-size: 100%;
+    }
+
+    .main h3 {
+        color: #fcfffd;
+        margin-top: 5em;
+    }
+
+    .criteria_list {
+        display: table;
+        width: 100%;
+    }
+    .criteria_tr {
+        display: table-row;
+    }
+    .card {
+        display: table-cell;
+    }
+
+    #join {
+        border: 2px dashed #fcfffd;
+        color: #fcfffd;
+    }
 }
 
-@media screen and (max-device-width: 580px) {
-
+@media screen and (max-width: 580px) {
     .logo {
-        display: none;
+        width: 50%;
     }
-    .logo_small {
-        display: flex;
-        width: 10%;
-        margin: 0 4%;
+    .main_block h2{
+        font-size: 40px;
+        line-height: 1.2em;
+        margin: 2em auto;
     }
-    .header {
-        font-size: 5em;
+    .main_block q{
+        font-size: 18px;
     }
     .nav {
         display: flex;
@@ -350,8 +366,29 @@
         display: flex;
         justify-content: center;
     }
+    .mail a, .phone a {
+        color: #fcfffd;
+        font-weight: 450;
+    }
     .dropbtn {
         justify-content: center;
         margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .nav li a, .mail a, .phone a {
+        font-size: 36px;
+    }
+
+    .main_block h2 {
+        font-size: 104px;
+    }
+    .main_block q {
+        font-size: 36px;
+    }
+
+    .main_block{
+        padding: 15em;
     }
 }
