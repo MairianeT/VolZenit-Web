@@ -268,7 +268,7 @@ table {
     grid-template-columns:
     minmax(150px, 1fr)
     minmax(150px, 1.67fr)
-    minmax(150px, 1.67fr)
+    minmax(150px, 1.33fr)
 }
 
 thead,
@@ -286,8 +286,6 @@ td {
 }
 
 th {
-    position: sticky;
-    top: 0;
     background: #1c3e7d;
     text-align: left;
     font-weight: normal;
@@ -302,7 +300,7 @@ th:last-child {
 td {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #dfeef6;
+    color: #1c3e7d;
 }
 
 tr:nth-child(even) td {
@@ -407,6 +405,9 @@ tr:nth-child(even) td {
     .description img{
         width: 100%;
         height: auto;
+    }
+    td {
+        color: #dfeef6;
     }
 }
 
