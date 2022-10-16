@@ -119,10 +119,10 @@
     outline: none;
     border: 2px dashed #fcfffd;
     border-radius: 6px;
-    height: 70px;
-    width: 300px;
-    line-height: 50px;
-    font-size: 28px;
+    width: 30vw;
+    height: 13vh;
+    line-height: 4vh;
+    font-size: 4vh;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
@@ -206,19 +206,11 @@
     word-wrap: break-word;
 }
 
-.description {
-    display: block;
-}
-
 .description h3 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     color: #1c3e7d;
-}
-
-.description img {
-    border-radius: 10px;
 }
 
 .description p {
@@ -227,51 +219,33 @@
     color: #1c3e7d;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    line-height: 26px;
-    border-radius: 10px;
+    border-radius: 1em;
     text-indent: 40px;
 }
 
-
-.p1 {
+.p1, .p2, .p3 {
     position: relative;
-    margin-right: 50px;
+    margin: 3%;
     display: flex;
-    height: 400px;
 }
 
-.p1 p{
-    padding: 10px 20px;
+.p1 p, .p2 p, .p3 p{
+    text-align: justify;
+    padding: 5%;
+    line-height: 1.3em;
+    margin-top: 0;
+}
+.description img{
+    float:left;
+    border-radius: 1em;
+    width:40vw;
+    height:50vh;
 }
 
-.p2 {
-    position: relative;
-    margin-left: 50px;
-    display: flex;
-    height: 400px;
-}
-
-.p2 p {
-    padding: 50px 25px;
-    margin: 80px 50px;
-}
-
-.p3 {
-    position: relative;
-    margin-right: 50px;
-    display: flex;
-    height: 400px;
-}
-
-.p3 p {
-    padding: 20px 25px;
-    margin: 50px 50px;
-}
 
 #join {
     border: 2px dashed #0070af;
     color: #0070af;
-    font-size: 24px;
     width: auto;
     margin-bottom: 50px;
 }
@@ -284,6 +258,11 @@
 }
 
 @media screen and (max-width: 1000px){
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 9998!important;
+    }
     .logo {
         width: 30%;
     }
@@ -327,7 +306,9 @@
         background-image: url("img/back_1000.jpg");
         background-size: 100%;
     }
-
+    .main_block {
+        margin: 30% auto;
+    }
     .main_block img {
         display: none;
     }
@@ -359,6 +340,19 @@
     }
     .card footer {
         height: 150px;
+    }
+    .p1, .p2, .p3 {
+        display: block;
+        width: 90%;
+        padding: 1%;
+    }
+    .description p {
+        margin: 2% auto 4%;
+        padding: 2%;
+    }
+    .description img{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -411,5 +405,21 @@
     }
     .main_block q {
         font-size: 36px;
+    }
+    .p1 img, .p2 img, .p3 img{
+        width: 55%;
+        margin: 1%;
+    }
+    .p1 p, .p2 p, .p3 p{
+        font-size: 28px;
+        padding: 3%;
+    }
+    .main h3 {
+        font-size: 54px;
+    }
+
+    .btn5 {
+        margin: 50px auto;
+        font-size: 58px;
     }
 }
