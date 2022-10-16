@@ -82,13 +82,16 @@
 }
 
     .main_block {
-        background-image: url("img/background_blue.jpg");
-        background-size: 100%;
-        background-repeat: no-repeat;
         text-align: center;
         line-height: 1em;
-        padding: 3em 0;
+        padding: 0;
+        position: relative;
+        width: auto;
     }
+
+.main_block img{
+    width: 100%;
+}
 
 .main_block h2 {
     font-family: 'Montserrat', sans-serif;
@@ -100,10 +103,15 @@
 
 .main_block q {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #fcfffd;
 }
-
+#headline {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
 .btn5 {
     display: block;
     box-sizing: border-box;
@@ -157,27 +165,32 @@
 }
 
 .criteria_list {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
     text-align: center;
-    display: flex;
-    margin: 30px;
+    position: relative;
+    width: 100%;
     list-style: none;
 }
 
 .criteria_list li{
-    display: grid;
+    width: 14%;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #00b2e1;
-}
-.card {
-    border-radius: 50px;
+    margin: 1%;
     background-color: #dfeef6;
-    margin: 10px;
-    width: 200px;
-    white-space: normal;
+    border-radius: 50px;
+}
+.card footer {
+    height: 100px;
 }
 .card img {
-    height: 150px;
+    width: 80%;
 }
 .card strong {
     font-size: 24px;
@@ -185,12 +198,12 @@
 }
 
 .card h5 {
-    width: 120px;
+    width: 80%;
     margin: 0 auto 20px;
 }
 
 #cheerfulness {
-    margin: 0 23px;
+    word-wrap: break-word;
 }
 
 .description {
@@ -310,12 +323,13 @@
     }
     .show {display: block}
 
-    .main_block {
-        background-image: none;
-    }
     body {
         background-image: url("img/back_1000.jpg");
         background-size: 100%;
+    }
+
+    .main_block img {
+        display: none;
     }
 
     .main h3 {
@@ -323,20 +337,24 @@
         margin-top: 5em;
     }
 
-    .criteria_list {
-        display: table;
-        width: 100%;
-    }
-    .criteria_tr {
-        display: table-row;
-    }
-    .card {
-        display: table-cell;
-    }
-
     #join {
         border: 2px dashed #fcfffd;
         color: #fcfffd;
+    }
+    #headline {
+        display: block;
+        position: initial;
+    }
+    .criteria{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .criteria_list li {
+        width: 45%;
+        position: relative;
+        display: inline-block;
     }
 }
 
@@ -350,7 +368,7 @@
         margin: 2em auto;
     }
     .main_block q{
-        font-size: 18px;
+        font-size: 14px;
     }
     .nav {
         display: flex;
@@ -381,14 +399,13 @@
         font-size: 36px;
     }
 
+    #headline {
+        bottom: 30%;
+    }
     .main_block h2 {
         font-size: 104px;
     }
     .main_block q {
         font-size: 36px;
-    }
-
-    .main_block{
-        padding: 15em;
     }
 }
