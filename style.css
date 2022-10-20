@@ -227,13 +227,13 @@
     position: relative;
     margin: 3%;
     display: flex;
+    align-items: center;
 }
 
 .p1 p, .p2 p, .p3 p{
     text-align: justify;
     padding: 2% 4%;
     line-height: 1.3em;
-    margin-top: 0;
 }
 .description img{
     float:left;
