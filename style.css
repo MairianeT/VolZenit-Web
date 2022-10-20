@@ -215,7 +215,7 @@
 
 .description p {
     background-color: #ebf4fb;
-    margin: 30px 50px;
+    margin: 3% 5%;
     color: #1c3e7d;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -231,7 +231,7 @@
 
 .p1 p, .p2 p, .p3 p{
     text-align: justify;
-    padding: 5%;
+    padding: 2% 4%;
     line-height: 1.3em;
     margin-top: 0;
 }
@@ -239,7 +239,7 @@
     float:left;
     border-radius: 1em;
     width:40vw;
-    height:50vh;
+    height:100%;
 }
 
 
@@ -266,9 +266,9 @@ table {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     grid-template-columns:
-    minmax(150px, 1fr)
-    minmax(150px, 1.67fr)
-    minmax(150px, 1.33fr)
+    minmax(150px, 3fr)
+    minmax(150px, 5fr)
+    minmax(150px, 4fr)
 }
 
 thead,
@@ -399,12 +399,14 @@ tr:nth-child(even) td {
         padding: 1%;
     }
     .description p {
-        margin: 2% auto 4%;
-        padding: 2%;
+        margin: 5% auto;
+        padding: 5%;
     }
     .description img{
         width: 100%;
         height: auto;
+        border-radius: 1em 1em 0 0;
+        margin-bottom: 3%;
     }
     td {
         color: #dfeef6;
