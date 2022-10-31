@@ -117,8 +117,8 @@
     box-sizing: border-box;
     padding: 0 4vw;
     outline: none;
-    border: 2px dashed #fcfffd;
-    border-radius: 6px;
+    border: none;
+    border-radius: 20px;
     width: auto;
     height: 11vh;
     line-height: 4vh;
@@ -127,7 +127,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fcfffd;
-    background-color: transparent;
+    background-color: rgba(223, 238, 246, 35%);
     cursor: pointer;
     user-select: none;
     appearance: none;
@@ -137,7 +137,7 @@
 }
 
 .btn5:hover {
-    background-color: rgba(255, 255, 255, 20%);
+    background-color: rgba(223, 238, 246, 50%);
 }
 .btn5:active {
     transform: scale(0.96);
@@ -204,6 +204,9 @@
 
 #cheerfulness {
     word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .description h3 {
@@ -244,15 +247,11 @@
 
 
 #join {
-    border: 2px dashed #0070af;
     color: #0070af;
     width: auto;
     margin-bottom: 50px;
 }
 
-#join:hover {
-    background-color: rgba(223, 238, 246, 40%);
-}
 .logo_small {
     display: none;
 }
@@ -321,18 +320,18 @@ tr:nth-child(even) td {
     .dropbtn {
         display: flex;
         margin: 0 auto;
-        background-color: white;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 40px;
         color: #00b2e1;
-        border: none;
         cursor: pointer;
+        border-radius: 15px;
+        border: none;
         padding: 0;
     }
     .dropbtn:hover, .dropbtn:focus {
         background-color: #dfeef6;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .nav {
         position: relative;
@@ -371,7 +370,6 @@ tr:nth-child(even) td {
     }
 
     #join {
-        border: 2px dashed #fcfffd;
         color: #fcfffd;
     }
     #headline {
@@ -446,6 +444,9 @@ tr:nth-child(even) td {
     .dropbtn {
         justify-content: center;
         margin: 10px;
+    }
+    .criteria_list li {
+        font-size: 24px;
     }
 }
 
