@@ -1,0 +1,102 @@
+@media screen and (max-width: 1000px){
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 9998!important;
+    }
+    .logo {
+        width: 30%;
+    }
+    .dropbtn {
+        display: flex;
+        margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        color: #00b2e1;
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        padding: 0;
+    }
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #dfeef6;
+        border-radius: 15px;
+    }
+    .nav {
+        position: relative;
+        display: inline-block;
+    }
+    .nav_links {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        background-color: white;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .nav_links a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .show {display: block}
+
+    body {
+        background-image: url("/img/back_1000.jpg");
+        background-size: 100%;
+    }
+    .main_block {
+        margin: 30% auto;
+    }
+    .main_block img {
+        display: none;
+    }
+
+    .main h3 {
+        color: #fcfffd;
+        margin-top: 5em;
+    }
+
+    #join {
+        color: #fcfffd;
+    }
+    #headline {
+        display: block;
+        position: initial;
+    }
+    .criteria{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .criteria_list li {
+        width: 45%;
+        position: relative;
+        display: inline-block;
+        font-size: 32px;
+    }
+    .card footer {
+        height: 150px;
+    }
+    .p1, .p2, .p3 {
+        display: block;
+        width: 90%;
+        padding: 1%;
+    }
+    .description p {
+        margin: 5% auto;
+        padding: 5%;
+    }
+    .description img{
+        width: 100%;
+        height: auto;
+        border-radius: 1em 1em 0 0;
+        margin-bottom: 3%;
+    }
+    td {
+        color: #dfeef6;
+    }
+}

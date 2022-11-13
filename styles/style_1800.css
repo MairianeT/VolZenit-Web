@@ -1,0 +1,31 @@
+@media screen and (min-width: 1800px){
+    .nav li a, .mail a, .phone a {
+        font-size: 36px;
+    }
+
+    #headline {
+        bottom: 30%;
+    }
+    .main_block h2 {
+        font-size: 104px;
+    }
+    .main_block q {
+        font-size: 36px;
+    }
+    .p1 img, .p2 img, .p3 img{
+        width: 55%;
+        margin: 1%;
+    }
+    .p1 p, .p2 p, .p3 p{
+        font-size: 28px;
+        padding: 3%;
+    }
+    .main h3 {
+        font-size: 54px;
+    }
+
+    .btn5 {
+        margin: 50px auto;
+        font-size: 58px;
+    }
+}
