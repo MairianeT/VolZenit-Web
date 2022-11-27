@@ -1,11 +1,8 @@
 (() => {
-    const startTime = new Date().getTime();
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const stampParagraph = document.querySelector('#timestamp');
+    const startTime = performance.timing;
 
     window.addEventListener('load', () => {
-        stampParagraph.innerHTML += `Время загрузки - ${(new Date().getTime() - startTime) / 1000} с`;
+        const loadTime = document.getElementById('timestamp')
+        loadTime.innerHTML += `Время загрузки - ${(startTime.loadEventStart - startTime.navigationStart) / 1000} с`;
     });
-    })
 })();
