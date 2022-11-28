@@ -318,3 +318,59 @@ tr:nth-child(even) td {
 .header-img {
     display: contents;
 }
+
+.events_input {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    background: #dfeef6;
+    border-radius: 0.5rem;
+    border: none;
+    height: 4vh;
+    width: 50vw;
+    outline: none;
+    box-shadow: none;
+    margin: 2rem auto;
+}
+.events_btn {
+    background-color: #1c3e7d;
+    height: 6vh;
+    font-size: 2.5vh;
+}
+.events_btn:hover{
+    color: #1c3e7d;
+}
+
+.events_list {
+    margin: 3% 5%;
+}
+
+.events_item{
+    display: block;
+    margin: 20px auto;
+    color: #1c3e7d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border-radius: 1em;
+    background-color: #ebf4fb;
+}
+
+.events_item_header{
+    display: inline-block;
+    width: 10%;
+    padding: 15px;
+    margin-left: 20px;
+}
+.events_item_text{
+    display: inline-block;
+    width: 40%;
+}
+
+.events_btn_delete{
+    cursor: pointer;
+    width: 10%;
+    display: inline-block;
+    padding-top: 30px;
+    margin-right: 20px;
+    float: right;
+}
