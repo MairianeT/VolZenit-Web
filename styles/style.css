@@ -357,16 +357,18 @@ tr:nth-child(even) td {
 
 .events_item_header{
     display: inline-block;
-    width: 100px;
+    width: 10%;
     padding: 15px;
     margin-left: 20px;
 }
 .events_item_text{
     display: inline-block;
+    width: 40%;
 }
 
 .events_btn_delete{
     cursor: pointer;
+    width: 10%;
     display: inline-block;
     padding-top: 30px;
     margin-right: 20px;
