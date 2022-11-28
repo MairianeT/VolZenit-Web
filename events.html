@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="img/icon.png" type="image/png">
-  <link rel="stylesheet" href="styles/style.css" type="text/css">
-  <link rel="stylesheet" href="styles/style_1000.css" type="text/css">
-  <link rel="stylesheet" href="styles/style_1800.css" type="text/css">
-  <link rel="stylesheet" href="styles/style_580.css" type="text/css">
-  <script src="scripts/time.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <title>События</title>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="Волонтеры, Зенит, Газпром Арена">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/style_1000.css" type="text/css">
+    <link rel="stylesheet" href="styles/style_1800.css" type="text/css">
+    <link rel="stylesheet" href="styles/style_580.css" type="text/css">
+    <script src="scripts/time.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>События</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Волонтеры, Зенит, Газпром Арена">
 </head>
 <body>
 <header class="header">
-  <a class="header-img" href="index.html"><img class="logo" src="img/full_logo.png" alt="logo"></a>
-  <a class="header-img" href="index.html"><img class="logo_small" src="img/logo.png" alt="logo"></a>
-  <nav class="nav">
-    <button onclick="menu()" class="dropbtn">Меню</button>
-    <script src="scripts/dropdown.js"></script>
-    <ul id="dropdown" class="nav_links">
-      <li><a href="news.html" data-nav="/VolZenit-Web/news.html">Новости</a></li>
-      <li><a href="functions.html" data-nav="/VolZenit-Web/functions.html">Функции</a></li>
-      <li><a href="gallery.html" data-nav="/VolZenit-Web/gallery.html">Галерея</a></li>
-      <li><a href="faq.html" data-nav="/VolZenit-Web/faq.html">F.A.Q.</a></li>
-      <li><a href="contacts.html" data-nav="/VolZenit-Web/contacts.html">Контакты</a></li>
-    </ul>
-    <script src="scripts/active_menu.js"></script>
-  </nav>
-  <div class="contacts">
-    <div class=mail><a href="mailto:volunteer@fc-zenit.ru">volunteer@fc-zenit.ru</a></div>
-    <div class=phone><a href="tel:+79310001309">+7 (931) 000-13-09</a></div>
-  </div>
+    <a class="header-img" href="index.html"><img class="logo" src="img/full_logo.png" alt="logo"></a>
+    <a class="header-img" href="index.html"><img class="logo_small" src="img/logo.png" alt="logo"></a>
+    <nav class="nav">
+        <button onclick="menu()" class="dropbtn">Меню</button>
+        <script src="scripts/dropdown.js"></script>
+        <ul id="dropdown" class="nav_links">
+            <li><a href="news.html" data-nav="/VolZenit-Web/news.html">Новости</a></li>
+            <li><a href="functions.html" data-nav="/VolZenit-Web/functions.html">Функции</a></li>
+            <li><a href="gallery.html" data-nav="/VolZenit-Web/gallery.html">Галерея</a></li>
+            <li><a href="faq.html" data-nav="/VolZenit-Web/faq.html">F.A.Q.</a></li>
+            <li><a href="contacts.html" data-nav="/VolZenit-Web/contacts.html">Контакты</a></li>
+        </ul>
+        <script src="scripts/active_menu.js"></script>
+    </nav>
+    <div class="contacts">
+        <div class=mail><a href="mailto:volunteer@fc-zenit.ru">volunteer@fc-zenit.ru</a></div>
+        <div class=phone><a href="tel:+79310001309">+7 (931) 000-13-09</a></div>
+    </div>
 
 </header>
 
 <main class="main">
-  <section class="description">
-    <h3>События</h3>
-    <form class="events_form" id="events-form">
-      <label class="events_label">
-        <input maxlength="40" placeholder="Введите название события" name="text" type="text" class="events_input"/>
-        <input class="events_input" type="date" id="date" name="date"
-               min="2018-01-01" max="2036-12-31">
-        </label>
-      <button type='submit' class="events_btn btn5">Добавить событие</button>
-    </form>
-    <div class="events_list" id="events-list"></div>
-  </section>
+    <section class="description">
+        <h3>События</h3>
+        <form class="events_form" id="events-form">
+            <label class="events_label">
+                <input maxlength="40" required minlength="4" placeholder="Введите название события" name="text"
+                       type="text" class="events_input"/>
+                <input class="events_input" required type="date" id="date" name="date"
+                       min="2018-01-01" max="2036-12-31">
+            </label>
+            <button type='submit' class="events_btn btn5">Добавить событие</button>
+        </form>
+        <div class="events_list" id="events-list"></div>
+
+        <template id="template">
+            <div class="events_item" id="empty">
+              <span class="events_item_body">
+                <h5 class="events_item_header"></h5>
+                <p class="events_item_text"></p>
+              </span>
+                <span class="events_btn_delete" id="delete-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="35" height="35"
+                     viewBox="0 0 128 128">
+                    <path fill="#fff"
+                          d="M84,124H44c-11.05,0-20-8.95-20-20V38h80v66C104,115.05,95.05,124,84,124z"></path>
+                    <path fill="#fff"
+                          d="M104,38H24c-5.52,0-10-4.48-10-10v0c0-5.52,4.48-10,10-10h80c5.52,0,10,4.48,10,10v0 C114,33.52,109.52,38,104,38z"></path><path
+                        fill="#444b54"
+                        d="M117,28c0-7.17-5.83-13-13-13H24c-7.17,0-13,5.83-13,13s5.83,13,13,13h77v63c0,9.37-7.63,17-17,17H44 c-9.37,0-17-7.63-17-17V52c0-1.66-1.34-3-3-3s-3,1.34-3,3v52c0,12.68,10.32,23,23,23h40c12.68,0,23-10.32,23-23V40.64 C112.72,39.28,117,34.13,117,28z M104,35H24c-3.86,0-7-3.14-7-7s3.14-7,7-7h80c3.86,0,7,3.14,7,7S107.86,35,104,35z"></path><path
+                        fill="#444b54"
+                        d="M79,7H49c-1.66,0-3-1.34-3-3s1.34-3,3-3h30c1.66,0,3,1.34,3,3S80.66,7,79,7z"></path><path
+                        fill="#71c2ff"
+                        d="M50,107c-1.66,0-3-1.34-3-3V58c0-1.66,1.34-3,3-3s3,1.34,3,3v46C53,105.66,51.66,107,50,107z"></path><path
+                        fill="#71c2ff"
+                        d="M78,107c-1.66,0-3-1.34-3-3V58c0-1.66,1.34-3,3-3s3,1.34,3,3v46C81,105.66,79.66,107,78,107z"></path>
+                </svg>
+              </span>
+            </div>
+        </template>
+    </section>
 </main>
 <footer class="footer">
-  <p id="timestamp"></p>
+    <p id="timestamp"></p>
 </footer>
 <script type="text/javascript" src="scripts/events.js"></script>
 </body>

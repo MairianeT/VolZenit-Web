@@ -363,7 +363,6 @@ tr:nth-child(even) td {
 }
 .events_item_text{
     display: inline-block;
-    padding: 15px;
 }
 
 .events_btn_delete{
