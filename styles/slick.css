@@ -1,0 +1,42 @@
+.slick-dots {
+    margin-bottom: -2rem;
+}
+
+.slick-dots li button:before {
+    color: #1c3e7d;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #0070af;
+    opacity: 1;
+    font-size: .8rem;
+}
+
+.functions img {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.func {
+    margin: 15px;
+    padding: 20px;
+    background-color: #dfeef6;
+    border-radius: 20px;
+    height: 400px;
+    width: 30%;
+}
+
+.functions h4 {
+    color: #1c3e7d;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.functions p {
+    color: #0070af;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+}
