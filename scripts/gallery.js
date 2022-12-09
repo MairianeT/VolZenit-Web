@@ -4,6 +4,8 @@ const getPhotos = async () => {
 }
 
 const container = document.getElementById('album-list');
+const template_photos = document.getElementById("photos");
+const template_error = document.getElementById("error");
 
 const loadPhotos = async () => {
     container.innerHTML = '' +
@@ -12,18 +14,21 @@ const loadPhotos = async () => {
     const first = Math.floor(Math.random() * 38);
     try {
         const data = (await getPhotos()).slice(first, first + 12);
-
         container.innerHTML = '';
         for (const item of data) {
-            container.innerHTML += `
-            <div class="photo__container">
-                <img src=${item.url} alt="image preview" class="photo"/>
-                <h5 class="photo__title">${item.title}</h5>
-            </div>
-            `
+            const photo = template_photos.content.cloneNode(true);
+            var img = photo.querySelectorAll("img");
+            img[0].src = item.url
+            var h5 = photo.querySelectorAll("h5");
+            h5[0].textContent = item.title
+            container.appendChild(photo);
         }
     } catch (e) {
-        container.innerHTML = '<div class="error"><p>Что-то пошло не так...</p></div>';
+        const error = template_error.content.cloneNode(true);
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+        container.appendChild(error);
     }
 }
 

@@ -36,7 +36,19 @@
   </div>
 </header>
 <main>
-  <div id="album-list"></div>
+  <div id="album-list">
+    <template id="photos">
+      <div class="photo__container">
+        <img src="" alt="image preview" class="photo"/>
+        <h5 class="photo__title">${item.title}</h5>
+      </div>
+    </template>
+    <template id="error">
+      <div class="error">
+        <p>Что-то пошло не так...</p>
+      </div>
+    </template>
+  </div>
 </main>
 <footer class="footer">
   <p id="timestamp"></p>
