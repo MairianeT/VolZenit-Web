@@ -1,0 +1,38 @@
+@media screen and (max-width: 580px) {
+    .logo {
+        width: 50%;
+    }
+    .main_block h2{
+        font-size: 40px;
+        line-height: 1.2em;
+        margin: 2em auto;
+    }
+    .main_block q{
+        font-size: 14px;
+    }
+    .nav {
+        display: flex;
+        justify-content: right;
+    }
+    .contacts {
+        display: none;
+    }
+    .contacts_down {
+        display: block;
+    }
+    .mail, .phone{
+        display: flex;
+        justify-content: center;
+    }
+    .mail a, .phone a {
+        color: #fcfffd;
+        font-weight: 450;
+    }
+    .dropbtn {
+        justify-content: center;
+        margin: 10px;
+    }
+    .criteria_list li {
+        font-size: 24px;
+    }
+}
