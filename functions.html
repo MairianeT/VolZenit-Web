@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/style_1800.css" type="text/css">
   <link rel="stylesheet" href="styles/style_580.css" type="text/css">
   <script src="scripts/time.js"></script>
+  <script src="scripts/active_menu.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -22,14 +23,15 @@
   <nav class="nav">
     <button onclick="menu()" class="dropbtn">Меню</button>
     <script src="scripts/dropdown.js"></script>
-    <ul id="dropdown" class="nav_links">
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="functions.html">Функции</a></li>
-      <li><a href="gallery.html">Галерея</a></li>
-      <li><a href="faq.html">F.A.Q.</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+    <ul id="dropdown" class="nav_links" >
+      <li id="news"><a href="news.html">Новости</a></li>
+      <li id="functions"><a href="functions.html">Функции</a></li>
+      <li id="gallery"><a href="gallery.html">Галерея</a></li>
+      <li id="faq"><a href="faq.html">F.A.Q.</a></li>
+      <li id="contacts"><a href="contacts.html">Контакты</a></li>
+      <script src="scripts/active_menu.js"></script>
     </ul>
-    <script src="scripts/active_menu.js"></script>
+    <script type="text/javascript">active_menu('functions');</script>
   </nav>
   <div class="contacts">
     <div class=mail><a href="mailto:volunteer@fc-zenit.ru">volunteer@fc-zenit.ru</a></div>
