@@ -1,5 +1,6 @@
 const getPhotos = async () => {
-    return await fetch(`https://jsonplaceholder.typicode.com/albums/1/photos`)
+    const album_id = Math.floor(Math.random() * 100);
+    return await fetch(`https://jsonplaceholder.typicode.com/albums/${album_id}/photos`)
         .then(response => response.json());
 }
 
@@ -11,9 +12,8 @@ const loadPhotos = async () => {
     container.innerHTML = '' +
         '<img src="https://cdn.dribbble.com/users/1626465/screenshots/4617986/media/b09265705b58f46795126fa8c0221867.gif" width="300" height="200" alt="mask">';
 
-    const first = Math.floor(Math.random() * 38);
     try {
-        const data = (await getPhotos()).slice(first, first + 12);
+        const data = (await getPhotos()).slice(12);
         container.innerHTML = '';
         for (const item of data) {
             const photo = template_photos.content.cloneNode(true);
