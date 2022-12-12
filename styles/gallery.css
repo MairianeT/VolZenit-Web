@@ -1,0 +1,35 @@
+#album-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.photo__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.photo__title {
+    color: #1c3e7d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.error {
+    color: red;
+}

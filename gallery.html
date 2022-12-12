@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="stylesheet" href="styles/gallery.css" type="text/css">
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="img/icon.png" type="image/png">
   <link rel="stylesheet" href="styles/style.css" type="text/css">
@@ -13,7 +14,6 @@
   <title>Галерея</title>
   <meta charset="UTF-8">
   <meta name="keywords" content="Волонтеры, Зенит, Газпром Арена">
-  <script src="scripts/time.js"></script>
 </head>
 <body>
 <header class="header">
@@ -29,15 +29,32 @@
       <li><a href="faq.html">F.A.Q.</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <script src="scripts/active_menu.js"></script>
   </nav>
   <div class="contacts">
     <div class=mail><a href="mailto:volunteer@fc-zenit.ru">volunteer@fc-zenit.ru</a></div>
     <div class=phone><a href="tel:+79310001309">+7 (931) 000-13-09</a></div>
   </div>
 </header>
+<main>
+  <div id="album-list">
+    <template id="photos">
+      <div class="photo__container">
+        <img src="" alt="image preview" class="photo"/>
+        <h5 class="photo__title">${item.title}</h5>
+      </div>
+    </template>
+    <template id="error">
+      <div class="error">
+        <p>Что-то пошло не так...</p>
+      </div>
+    </template>
+  </div>
+</main>
 <footer class="footer">
   <p id="timestamp"></p>
 </footer>
+<script type="text/javascript" src="scripts/time.js"></script>
+<script type="text/javascript" src="scripts/active_menu.js"></script>
+<script type="text/javascript" src="scripts/gallery.js"></script>
 </body>
 </html>
