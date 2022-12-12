@@ -13,7 +13,7 @@ const loadPhotos = async () => {
         '<img src="https://cdn.dribbble.com/users/1626465/screenshots/4617986/media/b09265705b58f46795126fa8c0221867.gif" width="300" height="200" alt="mask">';
 
     try {
-        const data = (await getPhotos()).slice(12);
+        const data = (await getPhotos()).slice(1, 12);
         container.innerHTML = '';
         for (const item of data) {
             const photo = template_photos.content.cloneNode(true);
